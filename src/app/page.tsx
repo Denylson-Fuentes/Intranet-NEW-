@@ -1,113 +1,174 @@
 import Image from "next/image";
+import SmoothScrolling from "./home_comps/smoothScrolling";
+import Link from "next/link";
+import Gallery from "./about/_components/carousel";
+
+let images = [
+  '/2/intranet/public/attack.svg',
+  '/2/intranet/public/barbatos.svg',
+  '/2/intranet/public/squad.svg',
+  '/2/intranet/public/orig.svg',
+  '/2/intranet/public/standard.svg',
+  '/2/intranet/public/unicorn.svg'
+]
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className=" bg-white p-0.5">
+      <div className="py-10  w-full h-[350px] bg-cover bg-center bg-no-repeat mb-8" style={{backgroundImage:'url(/beach.jpg)'}}>
+      </div>
+      <div className=" bg-white px-4 pt-2 pb-14">
+        <p className=" text-7xl text-black text-center font-semibold">June News</p>
+      </div>
+      <div className='flex-grow h-px mx-14 border-2 border-gray-500 rounded' ></div>
+      
+      <div className=" justify-evenly gap-2 p-2 bg-white flex items-center">
+        <div className=" bg-white p-5">
+          <div className=" bg-white py-4 px-10 text-black text-5xl font-bold underline">
+            <p>Holidays</p>
+          </div>
+          <div className="text-black text-2xl align-middle">
+            <div className="flex">
+              <p className="font-semibold pr-2">June 14th </p> 
+              <p className="font-normal ">Flag Day </p>
+            </div>
+            <div className="flex">
+              <p className="font-semibold pr-2">June 16th </p> 
+              <p className="font-normal">Father's Day</p>
+            </div>
+            <div className="flex">
+              <p className="font-semibold pr-2">June 19th</p> 
+              <p className="font-normal pr-1">Flag Day </p> 
+              <p className="text-red-500">(DAY OFF)</p>
+            </div>
+          </div>
+        </div>
+        <div className=" bg-slate-700 p-5 flex-column">
+          <div className="bg-slate-800 p-5">
+            {/* <SmoothScrolling page = 'home'/> */}
+          </div>
+          <div className="bg-slate-800 p-5 text-white ">
+            <p>Share out 2022-2023 Impact Filter with your communities</p>
+          </div>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section>
+        <div className=" text-center text-3xl font-semibold italic py-5">
+          <p>Father's at NEW</p>
+        </div>
+        <div className="items-center p-5 bg-red-300 flex-col">
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <div className="flex p-3 bg-blue-600 justify-evenly">
+            <div className="bg-white p-10">
+              <div className="p-10 bg-slate-400 ">
+                <p className="bg-red-500 p-6 w-[250px] h-[250px] text-center content-center">Image</p>
+              </div>
+              <div>
+                <p>Person, Position</p>
+              </div>
+            </div>
+            <div className="bg-white p-3 font-medium text-wrap">
+              <p className="text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p className="py-4">
+                -Person, Position
+              </p>
+            </div>
+          </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          <div className="flex p-3 bg-blue-600 justify-evenly">
+            <div className="bg-white p-10">
+              <div className="p-10 bg-slate-400">
+                <p className="bg-red-500 w-[250px] h-[250px] text-center content-center">Image</p>
+              </div>
+              <div>
+                <p>Person, Position</p>
+              </div>
+            </div>
+            <div className="bg-white p-3 font-medium text-wrap">
+              <p className="text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p className="py-4">
+                -Person, Position
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className='flex-grow h-px mx-14 border-2 border-gray-500 rounded' ></div>
+
+      <section className="flex p-5 bg-green-500 justify-center gap-5">
+        <div className=" bg-lime-400 p-5 text-left text-wrap w-1/2">
+          <p className=" font-bold text-xl p-2">Resources</p>
+
+          <Link href='#'>
+            <p className="underline font-medium p-2">Prepare for the Costs of Buying and Owning a Home</p>
+          </Link>
+
+          <Link href='#'>
+            <p className="underline font-medium p-2">Mortgage Information</p>
+          </Link>
+        </div>
+
+
+        <div className=" bg-lime-400 p-20 w-1/2">
+          <p className="font-medium text-xl">National Homeownership Month</p>
+        </div>
+      </section>
+
+      <div className='flex-grow h-px mx-14 border-2 border-gray-400 rounded' ></div>
+
+      <section className=" bg-orange-500 p-5 justify-center flex gap-5">
+        <div className=" bg-amber-500 p-5 w-1/2 ">
+          <div className=" bg-yellow-200 py-20">
+            <p className="text-white font-bold text-xl">Celebrating Juneteenth</p>
+          </div>
+          <div>
+            <p className="font-bold text-large w-4/5 pt-3 pb-2">The History of Juneteenth</p>
+            
+            <Link href='#'>
+              <p className="underline text-large font-medium p-2">National Museum of African American History & Culture</p>
+            </Link>
+          
+            <Link href='#'>
+              <p className="underline text-large font-medium p-2">National Geographic - Historic Article</p>
+            </Link>
+          </div>
+        </div>
+
+        <div className=" bg-amber-500 p-5 w-1/2">
+          <div className=" bg-yellow-200 py-20">
+            <p className="text-white font-bold text-xl">Celebrating Pride Month</p>
+          </div>
+          <div>
+            <p className="font-bold text-large w-4/5 pt-3 pb-2">The History of Pride Month</p>
+            
+            <Link href='#'>
+              <p className="underline text-large font-medium p-2">The Library of Congress</p>
+            </Link>
+          
+            <Link href='#'>
+              <p className="underline text-large font-medium p-2">National Archives - LGBTQ+ PrideMonth</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className=" bg-blue-600 p-5">
+        <div className="text-center text-white text-4xl italic">
+          <p>THE LEGACY OF FAMILY GALA 2024</p>
+        </div>
+        <div className=" bg-sky-200 w-12/12 h-72 px-72">
+          {/* <Gallery imgs = {images}/> */}
+        </div>
+      </section>
+
+    </div>
   );
 }

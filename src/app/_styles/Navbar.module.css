@@ -1,0 +1,119 @@
+/* components/Navbar.module.css
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #333;
+padding: 10px 20px;
+}
+
+.navLeft img {
+height: 50px; 
+font-size: 25px;
+font-weight: bold;
+}
+
+.navRight {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.link {
+color: #fff;
+text-decoration: none;
+font-weight: bold; 
+padding: 10px;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+.link:hover,
+.arrowButton:hover,
+.searchToggle:hover {
+background-color: #555;
+}
+
+.dropdown {
+position: relative;
+display: flex;
+align-items: center;
+}
+
+.dropdownContent {
+display: none;
+position: absolute;
+background-color: #333;
+padding: 10px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+.dropdownTable {
+display: grid;
+gap: 10px;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, auto);
+}
+
+.dropdownTableOneColumn {
+display: grid;
+gap: 10px;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(4, auto);
+}
+
+.dropdownLink {
+color: #fff;
+padding: 12px;
+text-decoration: none;
+text-align: center;
+display: block;
+border: 1px solid #555;
+}
+
+.dropdownLink:hover {
+background-color: #555;
+}
+
+.dropdown:hover .dropdownContent {
+display: block;
+}
+
+.arrowButton {
+padding: 0;
+margin: 0;
+background: none;
+border: none;
+color: #fff;
+font-size: 20px; 
+cursor: pointer;
+}
+
+.arrowButton:hover {
+background-color: transparent; 
+}
+
+.dropdown > .link {
+margin-top: 2px;
+}
+
+.searchContainer {
+display: flex; 
+align-items: center;
+margin-top: 10px;
+}
+
+.searchInput {
+padding: 5px;
+font-size: 16px;
+}
+
+.searchToggle {
+background: none;
+border: none;
+color: #fff;
+cursor: pointer;
+font-size: 20px; 
+} */
